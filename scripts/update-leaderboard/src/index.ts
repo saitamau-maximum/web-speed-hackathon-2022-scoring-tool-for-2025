@@ -7,6 +7,8 @@ import { logger } from "./logger";
 
 import type { CSVRow } from "./types";
 
+import fetch from "node-fetch";
+
 const DISCORD_WEBHOOK_URL =
   "https://discord.com/api/webhooks/1206400364652535838/FSKvZHM6fSpJgA4pOrGu-lW8cTnuhl7h-FG9mGDjgRKzhVdV4fVljF9dYfaF0xUEqqBU";
 
