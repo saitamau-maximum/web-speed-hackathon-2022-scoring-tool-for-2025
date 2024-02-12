@@ -128,7 +128,8 @@ ${sortedScoreList
     return `**${item.rank}**位: **${Number(item.score).toFixed(2)}** [${
       item.competitorId
     }](${item.url})`;
-  })}
+  })
+  .join("\n")}
 `;
 
   await fetch(DISCORD_WEBHOOK_URL, {
