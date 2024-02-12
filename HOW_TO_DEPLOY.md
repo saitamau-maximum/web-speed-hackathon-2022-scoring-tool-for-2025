@@ -15,7 +15,7 @@
 
 4. `yarn install` で依存関係をインストールします。もし`yarn`がない場合は`npm install -g yarn`を実行するか、`node v20`をインストールすると良いです。
 
-5. `yarn init:seeds 2024-02-01 2024-03-01` でシードデータを作成します。
+5. <https://github.com/saitamau-maximum/web-speed-hackathon-2022-scoring-tool/releases/tag/competition-new-seed>ここからseed dbをダウンロードします。`./database/seeds.sqlite`をダウンロードしたファイルで置き換えます。
 
 6. seedが更新されるので`git add .` + `git commit -m "init seeds"` + `git push origin main` でpushします。
 
