@@ -5,7 +5,8 @@
     "build": "yarn workspaces run build",
     "vrt:capture": "yarn workspace @web-speed-hackathon/vrt capture",
     "vrt:detect": "yarn workspace @web-speed-hackathon/vrt detect",
-    "scoring": "yarn workspace @web-speed-hackathon/scoring start"
+    "scoring": "yarn workspace @web-speed-hackathon/scoring start",
+    "update": "yarn workspace @web-speed-hackathon/update-leaderboard start"
   },
   "workspaces": [
     "scripts/*"

@@ -122,7 +122,7 @@ jobs:
         env:
           TARGET_ID: ${{ fromJSON(needs.payload.outputs.result).id }}
           TARGET_URL: ${{ fromJSON(needs.payload.outputs.result).url }}
-  report:
+  update:
     runs-on: ubuntu-20.04
     needs:
       - payload
@@ -131,15 +131,23 @@ jobs:
     if: needs.vrt.outputs.result == 'success'
     outputs:
       result: ${{ steps.update.outputs.export }}
-    concurrency: report-leader-board
+    concurrency: update-leader-board
     steps:
       - uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # renovate: tag=v2.4.0
         with:
           ref: main
-      - name: Report score to Maximum Leaderboard
-        id: report
+      - uses: actions/setup-node@1f8c6b94b26d0feae1e387ca63ccbdc44d27b561 # renovate: tag=v2.5.1
+        with:
+          node-version: "16"
+          cache: "yarn"
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+      - name: Update leader board
+        id: update
         run: |
-          yarn run report \
+          yarn run update \
+            --markdown ${GITHUB_WORKSPACE}/README.md \
+            --score-csv ${GITHUB_WORKSPACE}/score.csv \
             --id ${TARGET_ID} \
             --url ${TARGET_URL} \
             --score ${TARGET_SCORE}
@@ -147,6 +155,12 @@ jobs:
           TARGET_ID: ${{ fromJSON(needs.payload.outputs.result).id }}
           TARGET_URL: ${{ fromJSON(needs.payload.outputs.result).url }}
           TARGET_SCORE: ${{ fromJSON(needs.scoring.outputs.result).result.score }}
+      - name: Commit leader board
+        uses: stefanzweifel/git-auto-commit-action@5804e42f86b1891093b151b6c4e78e759c746c4d # renovate: tag=v4.13.1
+        with:
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
   comment-payload:
     runs-on: ubuntu-20.04
     needs:
@@ -390,7 +404,7 @@ jobs:
       - payload
       - vrt
       - scoring
-      - report
+      - update
       - comment-scoring
     if: always() && needs.update.result == 'failure'
     steps:
@@ -442,7 +456,7 @@ jobs:
       - payload
       - vrt
       - scoring
-      - report
+      - update
       - comment-scoring
     steps:
       - name: Create twitter share url

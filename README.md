@@ -1,2 +1,33 @@
 # Web Speed Hackathon 2022 Scoring Tool (Maximum Internal Cup)
 
+**"Web Speed Hackathon 2022 Public" は、非常に重たい Web アプリをチューニングして、いかに高速にするかを競う競技です。**
+
+今回のテーマは、架空のベッティングサービス「CyberTicket」です。
+「CyberTicket」のパフォーマンスを改善してください。
+
+- 課題レポジトリ: https://github.com/CyberAgentHack/web-speed-hackathon-2022
+
+## 開催期間
+
+2024/02/12 10:00 JST - 2024/02/29 18:00 JST
+
+## 参加登録
+
+- アプリケーションをデプロイして URL を用意します
+- このレポジトリの issue から参加登録します
+- もう一度計測する場合は、issue に `/retry` とコメントします
+
+## リーダーボード
+
+**上位 10 位までを表示しています**
+
+すべてのスコアは、[こちら](./score.csv) から閲覧できます
+
+<!-- leaderboard:start -->
+
+<!-- leaderboard:end -->
+
+---
+
+(c) CyberAgent
+当リポジトリは、CyberAgent, Inc. 主催のイベント「Web Speed Hackathon 2022」を個人利用の範囲で再利用して運用しています。
