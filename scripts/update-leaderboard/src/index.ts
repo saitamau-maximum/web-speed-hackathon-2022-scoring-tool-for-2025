@@ -1,4 +1,5 @@
 import fs from "fs/promises";
+import path from "path";
 import yargs from "yargs";
 import { parse as parseCSV } from "csv-parse/sync";
 import { stringify as stringifyCSV } from "csv-stringify/sync";
@@ -11,6 +12,29 @@ import fetch from "node-fetch";
 
 const DISCORD_WEBHOOK_URL =
   "https://discord.com/api/webhooks/1206400364652535838/FSKvZHM6fSpJgA4pOrGu-lW8cTnuhl7h-FG9mGDjgRKzhVdV4fVljF9dYfaF0xUEqqBU";
+
+const findRoot = async () => {
+  let currentPath = process.cwd();
+  while (true) {
+    const packageJsonPath = path.join(currentPath, "package.json");
+    try {
+      const packageJson = await fs.readFile(packageJsonPath, "utf-8");
+      const { name } = JSON.parse(packageJson);
+      console.log(name)
+      if (name === "web-speed-hackathon") {
+        return currentPath;
+      }
+    } catch (error) {
+      // continue searching in parent directory
+    }
+
+    const parentPath = path.dirname(currentPath);
+    if (parentPath === currentPath) {
+      throw new Error("Root directory not found");
+    }
+    currentPath = parentPath;
+  }
+};
 
 async function main() {
   const argv = await yargs
@@ -36,9 +60,9 @@ async function main() {
     })
     .help().argv;
 
-  const LOG_CSV = "log.csv";
+  const LOG_CSV_PATH = path.join(await findRoot(), "log.csv");
   await fs.appendFile(
-    LOG_CSV,
+    LOG_CSV_PATH,
     `${new Date().toISOString()},${argv.id},${argv.score},${argv.url}\n`
   );
 
