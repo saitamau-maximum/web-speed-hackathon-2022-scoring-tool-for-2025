@@ -29,6 +29,7 @@
 |Rank|Score||CompetitorId|URL|
 |:--:|:--:|:--:|:--|:--:|
 |1|**25.80**|<img alt="" width="50" height="50" src="https://github.com/sor4chi.png?size=100"/>|[@sor4chi](https://github.com/sor4chi)|[:link:](https://maximum-wsh-2022.fly.dev/)|
+|2|**23.10**|<img alt="" width="50" height="50" src="https://github.com/Daaaai0809.png?size=100"/>|[@Daaaai0809](https://github.com/Daaaai0809)|[:link:](https://web-speed-hackathon-2022-kabos.fly.dev/)|
 
 <!-- leaderboard:end -->
 
