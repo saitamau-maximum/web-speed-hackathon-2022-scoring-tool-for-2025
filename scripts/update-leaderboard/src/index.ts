@@ -34,6 +34,12 @@ async function main() {
     })
     .help().argv;
 
+  const LOG_CSV = "log.csv";
+  await fs.appendFile(
+    LOG_CSV,
+    `${new Date().toISOString()},${argv.id},${argv.score},${argv.url}\n`
+  );
+
   const result: CSVRow = {
     rank: 0,
     score: argv.score,
