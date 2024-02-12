@@ -34,6 +34,7 @@
 |2|**134.55**|<img alt="" width="50" height="50" src="https://github.com/a01sa01to.png?size=100"/>|[@a01sa01to](https://github.com/a01sa01to)|[:link:](https://wsh2022-practice.a01sa01to.com/)|
 |3|**25.90**|<img alt="" width="50" height="50" src="https://github.com/Daaaai0809.png?size=100"/>|[@Daaaai0809](https://github.com/Daaaai0809)|[:link:](https://web-speed-hackathon-2022-kabos.fly.dev/)|
 |4|**24.30**|<img alt="" width="50" height="50" src="https://github.com/seiei-n.png?size=100"/>|[@seiei-n](https://github.com/seiei-n)|[:link:](https://wsh-2022-2xsei.fly.dev/)|
+|5|**18.15**|<img alt="" width="50" height="50" src="https://github.com/kasa021.png?size=100"/>|[@kasa021](https://github.com/kasa021)|[:link:](https://web-speed-hackathon-2022-practice.fly.dev/)|
 
 <!-- leaderboard:end -->
 
