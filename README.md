@@ -26,6 +26,10 @@
 
 <!-- leaderboard:start -->
 
+|Rank|Score||CompetitorId|URL|
+|:--:|:--:|:--:|:--|:--:|
+|1|**207.90**|<img alt="" width="50" height="50" src="https://github.com/sor4chi.png?size=100"/>|[@sor4chi](https://github.com/sor4chi)|[:link:](https://maximum-wsh-2022.fly.dev/)|
+
 <!-- leaderboard:end -->
 
 ---
