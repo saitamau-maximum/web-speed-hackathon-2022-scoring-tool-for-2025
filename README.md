@@ -7,6 +7,8 @@
 
 - 課題レポジトリ: https://github.com/CyberAgentHack/web-speed-hackathon-2022
 
+**この大会は過去問を利用しています。ただし過去問とは若干実装方法が異なる部分があり多少変わっている部分があるので、必ず[HOW_TO_DEPLOY.md](./HOW_TO_DEPLOY.md) に従ってデプロイしてください。**
+
 ## 開催期間
 
 2024/02/12 10:00 JST - 2024/02/29 18:00 JST
