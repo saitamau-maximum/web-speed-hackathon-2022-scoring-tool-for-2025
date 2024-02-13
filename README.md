@@ -42,4 +42,6 @@
 ---
 
 (c) CyberAgent
-当リポジトリは、CyberAgent, Inc. 主催のイベント「Web Speed Hackathon 2022」を個人利用の範囲で再利用して運用しています。
+
+当リポジトリは、 Mozilla Public License Version 2.0 に基づき、CyberAgent, Inc. 主催のイベント「Web Speed Hackathon 2022」のコードを再利用して運用しています。
+元プロジェクトはこちら: [CyberAgentHack/web-speed-hackathon-2022-leaderboard](https://github.com/CyberAgentHack/web-speed-hackathon-2022-leaderboard)
