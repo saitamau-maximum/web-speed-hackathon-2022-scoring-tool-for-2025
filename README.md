@@ -31,7 +31,7 @@
 |Rank|Score||CompetitorId|URL|
 |:--:|:--:|:--:|:--|:--:|
 |1|**406.00**|<img alt="" width="50" height="50" src="https://github.com/sor4chi.png?size=100"/>|[@sor4chi](https://github.com/sor4chi)|[:link:](https://maximum-wsh-2022.pages.dev/)|
-|2|**229.90**|<img alt="" width="50" height="50" src="https://github.com/a01sa01to.png?size=100"/>|[@a01sa01to](https://github.com/a01sa01to)|[:link:](https://wsh2022-practice.a01sa01to.com/)|
+|2|**278.70**|<img alt="" width="50" height="50" src="https://github.com/a01sa01to.png?size=100"/>|[@a01sa01to](https://github.com/a01sa01to)|[:link:](https://wsh2022-practice.a01sa01to.com/)|
 |3|**36.65**|<img alt="" width="50" height="50" src="https://github.com/seiei-n.png?size=100"/>|[@seiei-n](https://github.com/seiei-n)|[:link:](https://wsh-2022-2xsei.fly.dev/)|
 |4|**24.45**|<img alt="" width="50" height="50" src="https://github.com/Daaaai0809.png?size=100"/>|[@Daaaai0809](https://github.com/Daaaai0809)|[:link:](https://web-speed-hackathon-2022-kabos.fly.dev/)|
 |5|**23.70**|<img alt="" width="50" height="50" src="https://github.com/shigekk.png?size=100"/>|[@shigekk](https://github.com/shigekk)|[:link:](https://wsh-2022-shigekk.fly.dev/)|
