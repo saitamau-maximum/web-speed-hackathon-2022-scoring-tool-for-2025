@@ -8,7 +8,8 @@ import { logger } from "./logger";
 
 import type { CSVRow } from "./types";
 
-import fetch from "node-fetch";
+import { generateGraphFromLog } from "./graph";
+import { EmbedBuilder, WebhookClient } from "discord.js";
 
 const DISCORD_WEBHOOK_URL =
   "https://discord.com/api/webhooks/1206400364652535838/FSKvZHM6fSpJgA4pOrGu-lW8cTnuhl7h-FG9mGDjgRKzhVdV4fVljF9dYfaF0xUEqqBU";
@@ -20,7 +21,6 @@ const findRoot = async () => {
     try {
       const packageJson = await fs.readFile(packageJsonPath, "utf-8");
       const { name } = JSON.parse(packageJson);
-      console.log(name)
       if (name === "web-speed-hackathon") {
         return currentPath;
       }
@@ -156,15 +156,28 @@ ${sortedScoreList
   .join("\n")}
 `;
 
-  await fetch(DISCORD_WEBHOOK_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      content: leaderBoardDiscordMarkdown,
-    }),
+  const webhookClient = new WebhookClient({ url: DISCORD_WEBHOOK_URL });
+
+  const embed = new EmbedBuilder()
+    .setTitle("Leaderboard更新情報")
+    .setDescription(leaderBoardDiscordMarkdown)
+    .setColor("#0099ff");
+
+  await webhookClient.send({ embeds: [embed] });
+
+  const buffer = await generateGraphFromLog();
+  fs.writeFile("graph.png", buffer);
+
+  await webhookClient.send({
+    files: [
+      {
+        attachment: "graph.png",
+        name: "graph.png",
+      },
+    ],
   });
+
+  await fs.rm("graph.png");
 }
 
 main().catch((e) => {

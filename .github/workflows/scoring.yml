@@ -62,7 +62,7 @@ jobs:
       - uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # renovate: tag=v2.4.0
       - uses: actions/setup-node@1f8c6b94b26d0feae1e387ca63ccbdc44d27b561 # renovate: tag=v2.5.1
         with:
-          node-version: "16"
+          node-version: "18"
           cache: "yarn"
       - run: yarn install --frozen-lockfile
       - run: yarn build
@@ -108,7 +108,7 @@ jobs:
       - uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # renovate: tag=v2.4.0
       - uses: actions/setup-node@1f8c6b94b26d0feae1e387ca63ccbdc44d27b561 # renovate: tag=v2.5.1
         with:
-          node-version: "16"
+          node-version: "18"
           cache: "yarn"
       - run: yarn install --frozen-lockfile
       - run: yarn build
@@ -138,7 +138,7 @@ jobs:
           ref: main
       - uses: actions/setup-node@1f8c6b94b26d0feae1e387ca63ccbdc44d27b561 # renovate: tag=v2.5.1
         with:
-          node-version: "16"
+          node-version: "18"
           cache: "yarn"
       - run: yarn install --frozen-lockfile
       - run: yarn build

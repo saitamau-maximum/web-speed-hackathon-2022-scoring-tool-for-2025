@@ -4,3 +4,10 @@ export type CSVRow = {
   competitorId: string;
   url: string;
 };
+
+export type LogRow = {
+  timestamp: string;
+  competitorId: string;
+  score: number;
+  url: string;
+};
