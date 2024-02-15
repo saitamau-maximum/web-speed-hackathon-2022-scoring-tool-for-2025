@@ -34,7 +34,7 @@
 |2|**394.00**|<img alt="" width="50" height="50" src="https://github.com/a01sa01to.png?size=100"/>|[@a01sa01to](https://github.com/a01sa01to)|[:link:](https://wsh2022-practice.a01sa01to.com/)|
 |3|**382.20**|<img alt="" width="50" height="50" src="https://github.com/seiei-n.png?size=100"/>|[@seiei-n](https://github.com/seiei-n)|[:link:](https://wsh-2022-2xsei.fly.dev/)|
 |4|**240.10**|<img alt="" width="50" height="50" src="https://github.com/kasa021.png?size=100"/>|[@kasa021](https://github.com/kasa021)|[:link:](https://wsh-2022-kasa.fly.dev/)|
-|5|**198.15**|<img alt="" width="50" height="50" src="https://github.com/Daaaai0809.png?size=100"/>|[@Daaaai0809](https://github.com/Daaaai0809)|[:link:](https://web-speed-hackathon-2022-kabos.fly.dev/)|
+|5|**229.75**|<img alt="" width="50" height="50" src="https://github.com/Daaaai0809.png?size=100"/>|[@Daaaai0809](https://github.com/Daaaai0809)|[:link:](https://web-speed-hackathon-2022-kabos.fly.dev/)|
 |6|**23.70**|<img alt="" width="50" height="50" src="https://github.com/shigekk.png?size=100"/>|[@shigekk](https://github.com/shigekk)|[:link:](https://wsh-2022-shigekk.fly.dev/)|
 
 <!-- leaderboard:end -->
