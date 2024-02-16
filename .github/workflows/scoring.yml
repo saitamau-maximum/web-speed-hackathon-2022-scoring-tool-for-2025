@@ -9,6 +9,7 @@ env:
   TZ: "Asia/Tokyo"
   WSH_SCORING_DEBUG: "${{ secrets.WSH_SCORING_DEBUG }}"
   WSH_SCORING_TARGET_PATHS: "${{ secrets.WSH_SCORING_TARGET_PATHS }}"
+  DISCORD_WEBHOOK_URL: "${{ secrets.DISCORD_WEBHOOK_URL }}"
 jobs:
   payload:
     runs-on: ubuntu-20.04

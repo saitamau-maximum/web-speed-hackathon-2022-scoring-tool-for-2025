@@ -11,8 +11,7 @@ import type { CSVRow } from "./types";
 import { generateGraphFromLog } from "./graph";
 import { EmbedBuilder, WebhookClient } from "discord.js";
 
-const DISCORD_WEBHOOK_URL =
-  "https://discord.com/api/webhooks/1206400364652535838/FSKvZHM6fSpJgA4pOrGu-lW8cTnuhl7h-FG9mGDjgRKzhVdV4fVljF9dYfaF0xUEqqBU";
+const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL;
 
 const findRoot = async () => {
   let currentPath = process.cwd();
