@@ -23,7 +23,7 @@ jobs:
       )
     steps:
       - name: Initialize
-        uses: actions/github-script@9ac08808f993958e9de277fe43a64532a609130e # renovate: tag=v6.0.0
+        uses: actions/github-script@v7.0.1
         if: github.event_name == 'issues'
         with:
           script: |
@@ -34,7 +34,7 @@ jobs:
               title: `[スコア] @${context.actor}`,
             });
       - name: Comment
-        uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae # renovate: tag=v1.4.5
+        uses: peter-evans/create-or-update-comment@v4.0.0
         if: github.event_name == 'issues'
         with:
           issue-number: ${{ github.event.issue.number }}
@@ -44,7 +44,7 @@ jobs:
             - :information_source: 計測中に、解決できない問題が発生した場合、 `@sor4chi` にご連絡ください
             - :information_source: 計測先URLを変更するなど、登録内容を変更する場合は、issue を閉じて作り直してください
       - name: Comment
-        uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae # renovate: tag=v1.4.5
+        uses: peter-evans/create-or-update-comment@v4.0.0
         id: report-comment
         with:
           issue-number: ${{ github.event.issue.number }}
@@ -52,13 +52,13 @@ jobs:
             :hourglass_flowing_sand: **計測する準備をしています**
       - name: Parse issue's description
         id: parse
-        uses: peter-murray/issue-forms-body-parser@fbc019fcec5774d67d4d611c47bf0e87365eb75e # renovate: tag=v2.0.0
+        uses: peter-murray/issue-forms-body-parser@v4.1.0
         with:
           issue_id: ${{ github.event.issue.number }}
           label_marker_start: "{{"
           label_marker_end: "}}"
       - name: Create payload
-        uses: actions/github-script@9ac08808f993958e9de277fe43a64532a609130e # renovate: tag=v6.0.0
+        uses: actions/github-script@v7.0.1
         with:
           script: |
             const fs = require('fs');
@@ -85,14 +85,14 @@ jobs:
           REPORT_COMMENT_ID: ${{ steps.report-comment.outputs.comment-id }}
           REQUEST_TIME: ${{ (github.event_name == 'issues' && github.event.issue.created_at) || github.event.comment.created_at }}
       - name: Upload payload
-        uses: actions/upload-artifact@82c141cc518b40d92cc801eee768e7aafc9c2fa2 # renovate: tag=v2.3.1
+        uses: actions/upload-artifact@v4.3.1
         with:
           name: payload.json
           path: /tmp/payload.json
           retention-days: 1
       - name: Failure message
         if: failure()
-        uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae # renovate: tag=v1.4.5
+        uses: peter-evans/create-or-update-comment@v4.0.0
         with:
           comment-id: ${{ steps.report-comment.outputs.comment-id }}
           edit-mode: replace
