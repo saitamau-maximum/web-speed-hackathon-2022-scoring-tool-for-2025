@@ -3,6 +3,7 @@ import path from "path";
 import yargs from "yargs";
 import { parse as parseCSV } from "csv-parse/sync";
 import { stringify as stringifyCSV } from "csv-stringify/sync";
+import { setOutput } from "@actions/core";
 
 import { logger } from "./logger";
 
@@ -103,7 +104,7 @@ async function main() {
     }
   }
 
-  console.log(`::set-output name=export::${JSON.stringify(result)}`);
+  setOutput("export", JSON.stringify(result));
 
   const leaderBoardMarkdown = [
     "<!-- leaderboard:start -->",
