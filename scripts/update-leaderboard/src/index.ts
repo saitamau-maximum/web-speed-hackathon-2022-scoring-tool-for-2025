@@ -111,18 +111,16 @@ async function main() {
     "",
     "|Rank|Score||CompetitorId|URL|",
     "|:--:|:--:|:--:|:--|:--:|",
-    ...sortedScoreList
-      .filter((s) => s.rank <= 10)
-      .map((item) => {
-        const inner = [
-          `${item.rank}`,
-          `**${Number(item.score).toFixed(2)}**`,
-          `<img alt="" width="50" height="50" src="https://github.com/${item.competitorId}.png?size=100"/>`,
-          `[@${item.competitorId}](https://github.com/${item.competitorId})`,
-          `[:link:](${item.url})`,
-        ].join("|");
-        return `|${inner}|`;
-      }),
+    ...sortedScoreList.map((item) => {
+      const inner = [
+        `${item.rank}`,
+        `**${Number(item.score).toFixed(2)}**`,
+        `<img alt="" width="50" height="50" src="https://github.com/${item.competitorId}.png?size=100"/>`,
+        `[@${item.competitorId}](https://github.com/${item.competitorId})`,
+        `[:link:](${item.url})`,
+      ].join("|");
+      return `|${inner}|`;
+    }),
     "",
     "<!-- leaderboard:end -->",
   ].join("\n");
@@ -147,7 +145,6 @@ async function main() {
 ## Leaderboard更新情報
 
 ${sortedScoreList
-  .filter((s) => s.rank <= 10)
   .map((item) => {
     return `**${item.rank}**位: **${Number(item.score).toFixed(2)}** [${
       item.competitorId
