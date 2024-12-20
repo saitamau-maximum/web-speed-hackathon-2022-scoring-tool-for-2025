@@ -1,6 +1,6 @@
 # デプロイ方法
 
-1. <https://github.com/saitamau-maximum/web-speed-hackathon-2022> をクローンします。
+1. <https://github.com/saitamau-maximum/web-speed-hackathon-2022-for-2025> をクローンします。
 (フォークでもいいですが、プライベートリポジトリにできないので、cloneしてから作成したプライベートリポジトリにremoteを書き換えてそちらにpushするのが良いです)
 
 2. `.git/config`を開く

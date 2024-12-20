@@ -26,14 +26,12 @@ export async function generateGraphFromLog() {
     (a, b) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime()
   );
 
-  const START_DATE = new Date("2024-02-12T01:00:00.000Z");
+  const PER_STEP = 1000 * 60 * 60; // 1 hour
+  const labels = [];
+  const START_DATE = new Date("2024-12-19T00:00:00.000+09:00");
   const CURRENT_DATE = new Date(
     sortedByDateScoreList[sortedByDateScoreList.length - 1].timestamp
   );
-
-  // generate step
-  const PER_STEP = 1000 * 60 * 60; // 1 hour
-  const labels = [];
   for (
     let date = START_DATE;
     date <= CURRENT_DATE;
