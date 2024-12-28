@@ -11,7 +11,7 @@
 
 ## 開催期間
 
-2024/02/12 10:00 JST - 2024/02/29 18:00 JST
+2024/12/19 00:00 JST - 2025/01/31 23:59 JST
 
 ## 参加登録
 
@@ -28,17 +28,7 @@
 
 <!-- leaderboard:start -->
 
-|Rank|Score||CompetitorId|URL|
-|:--:|:--:|:--:|:--|:--:|
-|1|**491.95**|<img alt="" width="50" height="50" src="https://github.com/sor4chi.png?size=100"/>|[@sor4chi](https://github.com/sor4chi)|[:link:](https://maximum-wsh-2022.pages.dev/)|
-|2|**490.25**|<img alt="" width="50" height="50" src="https://github.com/a01sa01to.png?size=100"/>|[@a01sa01to](https://github.com/a01sa01to)|[:link:](https://wsh2022-practice.a01sa01to.com/)|
-|3|**383.00**|<img alt="" width="50" height="50" src="https://github.com/Daaaai0809.png?size=100"/>|[@Daaaai0809](https://github.com/Daaaai0809)|[:link:](https://web-speed-hackathon-2022-kabos.fly.dev/)|
-|4|**382.20**|<img alt="" width="50" height="50" src="https://github.com/seiei-n.png?size=100"/>|[@seiei-n](https://github.com/seiei-n)|[:link:](https://wsh-2022-2xsei.fly.dev/)|
-|5|**260.45**|<img alt="" width="50" height="50" src="https://github.com/kasa021.png?size=100"/>|[@kasa021](https://github.com/kasa021)|[:link:](https://wsh-2022-kasa.fly.dev/)|
-|6|**119.00**|<img alt="" width="50" height="50" src="https://github.com/yukikamome316.png?size=100"/>|[@yukikamome316](https://github.com/yukikamome316)|[:link:](https://wsh-2022-yuki.fly.dev/)|
-|7|**60.85**|<img alt="" width="50" height="50" src="https://github.com/batora9.png?size=100"/>|[@batora9](https://github.com/batora9)|[:link:](https://batora-web-speed-hackathon-2022.fly.dev/)|
-|8|**54.20**|<img alt="" width="50" height="50" src="https://github.com/nakamuraitsuki.png?size=100"/>|[@nakamuraitsuki](https://github.com/nakamuraitsuki)|[:link:](https://nakamura-wsh-2022.fly.dev/)|
-|9|**23.70**|<img alt="" width="50" height="50" src="https://github.com/shigekk.png?size=100"/>|[@shigekk](https://github.com/shigekk)|[:link:](https://wsh-2022-shigekk.fly.dev/)|
+**No leaderboard data**
 
 <!-- leaderboard:end -->
 

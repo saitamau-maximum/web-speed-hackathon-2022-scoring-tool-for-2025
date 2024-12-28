@@ -42,8 +42,8 @@ jobs:
           script: |
             const payload = require('/tmp/payload.json');
 
-            const startAt = new Date('2024-02-12T10:00:00.000+09:00');
-            const endAt = new Date('2024-02-29T18:00:00.000+09:00');
+            const startAt = new Date('2024-12-19T00:00:00.000+09:00');
+            const endAt = new Date('2025-01-31T23:59:59.000+09:00');
             const requestedAt = new Date(payload.request_time);
 
             if (requestedAt < startAt || endAt < requestedAt) {
