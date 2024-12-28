@@ -30,7 +30,8 @@
 
 |Rank|Score||CompetitorId|URL|
 |:--:|:--:|:--:|:--|:--:|
-|1|**21.60**|<img alt="" width="50" height="50" src="https://github.com/nomanoma121.png?size=100"/>|[@nomanoma121](https://github.com/nomanoma121)|[:link:](https://itchy-gertrudis-kouta0121-13e5088c.koyeb.app/)|
+|1|**36.60**|<img alt="" width="50" height="50" src="https://github.com/batora9.png?size=100"/>|[@batora9](https://github.com/batora9)|[:link:](https://web-speed-hackathon-2022-for-2025-cool-smoke-4932.fly.dev/)|
+|2|**21.60**|<img alt="" width="50" height="50" src="https://github.com/nomanoma121.png?size=100"/>|[@nomanoma121](https://github.com/nomanoma121)|[:link:](https://itchy-gertrudis-kouta0121-13e5088c.koyeb.app/)|
 
 <!-- leaderboard:end -->
 
