@@ -28,7 +28,9 @@
 
 <!-- leaderboard:start -->
 
-**No leaderboard data**
+|Rank|Score||CompetitorId|URL|
+|:--:|:--:|:--:|:--|:--:|
+|1|**43.35**|<img alt="" width="50" height="50" src="https://github.com/nomanoma121.png?size=100"/>|[@nomanoma121](https://github.com/nomanoma121)|[:link:](https://itchy-gertrudis-kouta0121-13e5088c.koyeb.app/)|
 
 <!-- leaderboard:end -->
 
