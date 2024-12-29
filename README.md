@@ -31,8 +31,9 @@
 |Rank|Score||CompetitorId|URL|
 |:--:|:--:|:--:|:--|:--:|
 |1|**204.65**|<img alt="" width="50" height="50" src="https://github.com/sor4chi.png?size=100"/>|[@sor4chi](https://github.com/sor4chi)|[:link:](https://web-speed-hackathon-2022-for-2025.fly.dev/)|
-|2|**36.60**|<img alt="" width="50" height="50" src="https://github.com/batora9.png?size=100"/>|[@batora9](https://github.com/batora9)|[:link:](https://web-speed-hackathon-2022-for-2025-cool-smoke-4932.fly.dev/)|
-|3|**21.60**|<img alt="" width="50" height="50" src="https://github.com/nomanoma121.png?size=100"/>|[@nomanoma121](https://github.com/nomanoma121)|[:link:](https://itchy-gertrudis-kouta0121-13e5088c.koyeb.app/)|
+|2|**48.90**|<img alt="" width="50" height="50" src="https://github.com/zerozero-0-0.png?size=100"/>|[@zerozero-0-0](https://github.com/zerozero-0-0)|[:link:](https://web-speed-hackathon-2022-for-2025-wispy-haze-7139.fly.dev/)|
+|3|**36.60**|<img alt="" width="50" height="50" src="https://github.com/batora9.png?size=100"/>|[@batora9](https://github.com/batora9)|[:link:](https://web-speed-hackathon-2022-for-2025-cool-smoke-4932.fly.dev/)|
+|4|**21.60**|<img alt="" width="50" height="50" src="https://github.com/nomanoma121.png?size=100"/>|[@nomanoma121](https://github.com/nomanoma121)|[:link:](https://itchy-gertrudis-kouta0121-13e5088c.koyeb.app/)|
 
 <!-- leaderboard:end -->
 
